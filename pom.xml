@@ -40,6 +40,7 @@
         <parallelCount>1</parallelCount>
     </properties>
 
+
     <dependencies>
         <dependency>
             <groupId>io.qameta.allure</groupId>
@@ -124,11 +125,11 @@
             <artifactId>json</artifactId>
             <version>${json.version}</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>log4j</groupId>-->
-<!--            <artifactId>log4j</artifactId>-->
-<!--            <version>${log4j.version}</version>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>log4j</groupId>-->
+        <!--            <artifactId>log4j</artifactId>-->
+        <!--            <version>${log4j.version}</version>-->
+        <!--        </dependency>-->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
@@ -159,7 +160,7 @@
                     <perCoreThreadCount>${parallelCount}</perCoreThreadCount>
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-<!--                        нужно указать кодировку иначе в терминале не будет кирилицы у фич кукумбера-->
+                        <!--                        нужно указать кодировку иначе в терминале не будет кирилицы у фич кукумбера-->
                         -Dfile.encoding=UTF-8
                     </argLine>
                     <failIfNoTests>true</failIfNoTests>
