@@ -1,7 +1,7 @@
 Проект пример1
 
 Сборка: java8, junit5, selenide, rest assured, cucumber, allure
-Сборка выполнена на указании входных констант через test.properties
+Сборка выполнена на указании входных констант через test.properties напрямую
 
 #Запуск -
 mvn clean test -Dcucumber.filter.tags="@001ui"
