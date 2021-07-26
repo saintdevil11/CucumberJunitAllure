@@ -2,6 +2,7 @@
 
 Сборка: java8, junit5, selenide, rest assured, cucumber, allure
 Сборка выполнена на указании входных констант через test.properties напрямую
+Работа с входными данными вынесена в класс Configuration, там определена логи прослушивания проперти файла
 
 #Запуск -
 mvn clean test -Dcucumber.filter.tags="@001ui"
