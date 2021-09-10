@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/feature",
         //Указание как мы собираем отчёты: значение-pretty говорит от том что этот тип отчета будет подробный.
         //Далее можем просто добавить ещё тип отчета. https://www.toolsqa.com/selenium-cucumber-framework/cucumber-reports/
-        plugin = {"pretty", "io.qameta.allure.cucumber6jvm.AllureCucumber6Jvm", "json:target/cucumber,json"},
+        plugin = {"pretty", "io.qameta.allure.cucumber6jvm.AllureCucumber6Jvm", "json:target/cucumber.json"},
         //Откуда тесты и настройки берутся
         glue = {"hooks", "steps"},
         //Главный тэг всех тестов
